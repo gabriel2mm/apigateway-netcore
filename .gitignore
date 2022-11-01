@@ -1,0 +1,17 @@
+.vs
+.vscode
+**/obj
+**/bin
+/bin
+/obj
+/postgres
+docker-compose.debug.yml
+**.vscode
+.DS_Store
+**.DS_Store
+.vs/MsUsers/xs
+
+**/postgres
+**/postgres/**
+/postgres/**
+.fake
