@@ -12,7 +12,22 @@
       "UpstreamPathTemplate": "/api/v1/users",
       "UpstreamHttpMethod": [
         "Get",
-        "Post",
+        "Post"
+      ],
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/users/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 8085
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/users/{everything}",
+      "UpstreamHttpMethod": [
+        "Get",
         "Put",
         "Patch"
       ],
