@@ -1,0 +1,15 @@
+version: '3.5'
+services:
+  apigateway:
+    container_name: apigateway
+    image: apigateway
+    build:
+      context: .
+      dockerfile: Apigateway/Dockerfile.develop
+    ports:
+      - 8081:8081
+    restart: unless-stopped
+    volumes:
+      - ./Apigateway:/app
+volumes:
+    Apigateway:
